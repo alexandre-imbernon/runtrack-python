@@ -1,16 +1,4 @@
-# Chaîne initiale
-chaine = "abcdefghijklmnopqrstuvwxyz" * 10
-
-# Initialisation des variables
+alphabet = "abcdefghijklmnopqrstuvwxyz" * 10
 i = 0
-j = 0
-pyramide = ""
-
-# Boucle pour construire la pyramide
-while i < len(chaine):
-    pyramide += chaine[i:i+j+1] + "\n"
-    i += j + 1
-    j += 1
-
-# Affichage de la pyramide
-print(pyramide)
+while i < len(alphabet) and i < 27:
+    print(alphabet[i:i+(i:=i+1)])
